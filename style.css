@@ -1,0 +1,255 @@
+
+      body
+    {
+        font-family: Arial, sans-serif;
+        margin: 0 auto;
+        width: 100vw;
+        color: white;
+        overflow: hidden;
+        overflow-y: auto;
+        box-sizing: border-box;
+    
+      }
+      /* Style the button */
+.dropdown-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style the dropdown container */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hide the dropdown content by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  line-height: 30px;
+  min-width: 155px;
+  padding: 10px;
+  font-weight: bold;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Show the dropdown content when hovering over the button */
+.dropdown-container:hover .dropdown-content {
+  display: block;
+}
+      .nav-item  a:hover{
+        color:#FF5461;
+
+      }
+    
+      .main-container {
+        background: linear-gradient(130.94deg, #0700DD 40%, #00F2FF 100%);
+       padding-top: 16px;
+        padding-left : 50px;
+        padding-right : 50px;
+        /* padding-bottom: 35px; */
+        border-radius: 0 0 20% 20%; 
+      }
+      .blow {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.9); /* White color with 70% opacity */
+        animation: blowEffect 0.7s ease-out;
+        pointer-events: none;
+      }
+
+      @keyframes blowEffect {
+        0% {
+          transform: scale(1);
+          opacity: 0.7;
+        }
+        100% {
+          transform: scale(2);
+          opacity: 0;
+        }
+      }
+.content-div{
+        display: flex;
+        border-radius: 20px;
+         height: 80vh;
+         width: 100%;
+         margin-top: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 50px 0 50px;
+}
+      .form-container {
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .form-container input[type="text"] {
+        width: 90%;
+        padding: 10px 40px 10px 30px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        background-color: transparent;
+        border: 1px solid #544FE8;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+      }
+       .form-container button {
+        padding: 10px 40px 10px 30px;
+        background-color: #544FE8;
+        color: white;
+        cursor: pointer;
+        width: 15%;
+        font-size: 15px;
+         border: 1px solid #544FE8;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+      }
+   .form-container button:hover{
+    color: #0700DD; 
+   background-color: #5cb5e6;
+}
+      .form-container .link-icon {
+        position: absolute;
+        top: 40%;
+        left: 10px;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 20px;
+      }
+
+      .form-container .copy-link-icon {
+        position: absolute;
+        top: 40%;
+        right: 10px;
+        transform: translateY(-50%);
+        color: white;
+        cursor: pointer;
+        font-size: 22px;
+      }     
+      .form-container button:disabled {
+        background-color: #dddddd;
+ 
+      }
+ .form-container input{
+  outline: none;
+ }
+      .share-icons {
+         
+        display: flex;
+        justify-content: center;
+        padding-left: 50px;
+        border-radius: 25px;
+        height: 60%;
+        gap: 1rem;
+        width: 500px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        background-color: white;
+      }
+       
+      .illustration {
+        width: 500px;
+      }
+      .copyLink {
+        margin:   auto ;
+      }
+      .toggleButton {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        outline: none;
+        margin-top: 20px;
+        background-color: white;
+        border: 2px solid #544FE8;
+      }
+      .pic-side {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        
+      }
+      .share-icons img {
+    
+     position: relative;
+     cursor: pointer;
+     transition: transform 0.3s ease, color 0.3s ease;
+}
+.line{
+      border-left: 1px solid  #4CAF50 ;
+}
+
+  @media (min-width: 2560px) {
+   
+     .illustration {
+        min-width: 700px;
+      }
+      .content-div{
+        justify-content: center;
+      }
+  }
+   @media (max-width: 1190px){
+    
+ 
+   .illustration {
+     display: none;
+      }
+      .copyLink{
+        width: 100vw;
+        padding: 20px;
+      }
+   
+   }
+   @media (max-width:768px){
+    .part-2{
+        display: none;
+    }
+   }
+   
+      /* @media (min-width: 375px){
+    
+   .illustration {
+     display: block;
+      }
+   
+   } */
+#textContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0;
+  overflow: hidden;
+}
+
+#textContainer.showText {
+  height: 70px; /* Adjust the height to fit your text */
+}
+
+#textContainer p {
+  margin: 0 5px; /* Adjust the margin as needed to space the texts */
+  font-size: 18px;
+}
+
+.showText img {
+  animation: slideIn 0.6s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
